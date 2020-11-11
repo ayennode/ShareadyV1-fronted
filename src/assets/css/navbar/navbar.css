@@ -1,0 +1,51 @@
+.navbar-brand img{
+    width: 145px;
+}
+
+.navbar{
+    height: 10vh;
+}
+
+.btn-sign{
+    color: #FF3939;
+    background-color: #FF3939;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.btn-middle{
+    margin-right: 10px;
+    color: #FF3939;
+}
+
+.btn-bars{
+    display: none;
+    color: #FF3939;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.nav-item a:hover{
+    border: none;
+    color: #FF3939;
+}
+
+.btn-sign:hover{
+    background-color: white;
+    color: #FF3939;
+    transition: 0.2s;
+    text-decoration: none;
+    border:none;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-item{
+        display: none;
+    }
+
+    .btn-bars{
+        display: block;
+    }
+  }

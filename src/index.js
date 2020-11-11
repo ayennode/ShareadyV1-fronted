@@ -2,8 +2,26 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
 
+import Home from './views/Home'
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import styles from './index.css'
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+
 ReactDOM.render(
   <React.StrictMode>
+    <Router>
+      <Switch>
+        <Route path="/home">
+          <Home />
+        </Route>
+      </Switch>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );

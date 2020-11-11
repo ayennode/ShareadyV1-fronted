@@ -1,0 +1,16 @@
+.background_signup{
+    position: absolute;
+    width: 60%;
+    height: 90vh;
+    background-color: #FF3939;
+    -webkit-border-bottom-right-radius: 80%;
+    -moz-border-radius-bottomright: 80%;
+    border-bottom-right-radius: 80%;
+}
+
+.box_sign_up{
+    background-color: #f5F5F5;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+}

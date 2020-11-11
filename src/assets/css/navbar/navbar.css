@@ -40,6 +40,12 @@
     border:none;
 }
 
+.text-signup{
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
 @media screen and (max-width: 768px) {
     .nav-item{
         display: none;
@@ -47,5 +53,9 @@
 
     .btn-bars{
         display: block;
+    }
+
+    .text-signup{
+        display: none;
     }
   }

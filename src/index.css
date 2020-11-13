@@ -1,6 +1,8 @@
 body{
     overflow-x: hidden;
     font-family: 'Montserrat', sans-serif;
+    word-break: break-word;
+    background-color: #2F2E41;
 }
 
 .none{

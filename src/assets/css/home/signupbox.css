@@ -1,15 +1,6 @@
-.background_signup{
-    position: absolute;
-    width: 60%;
-    height: 90vh;
-    background-color: #FF3939;
-    -webkit-border-bottom-right-radius: 80%;
-    -moz-border-radius-bottomright: 80%;
-    border-bottom-right-radius: 80%;
-}
 
 .box_sign_up{
-    background-color: white;
+    background-color: #2F2E41;
     height: 90vh;
     display: flex;
     align-items: center;
@@ -29,22 +20,22 @@
     margin-top: 1%;
     width: 100%;
     border: 1px solid #F5F5F5;
-    background-color: #F5F5F5;
+    background-color: white;
 }
 
 .btn-sign-up{
     width: 100%;
-    background-color: #FF3939;
+    background-color: white;
     text-align: center;
-    color: white;
+    color: #FF3939;
     padding: 1.5%;
     margin-top: 1%;
-    border-radius: 6px;
+    box-shadow: 3px 3px 6px black;
 }
 
 .btn-sign-up:hover{
-    background-color: white;
-    color: #FF3939;
+    background-color: #2F2E41;
+    color: white;
     transition: 0.2s;
     text-decoration: none;
     cursor: pointer;
@@ -66,8 +57,28 @@
 }
 
 .container-icon-signup h1{
-    color: #FF3939;
+    color: white;
     margin-left: 3%;
+}
+
+.text-signup h1{
+    font-weight: bolder;
+}
+
+.background_svg{
+    margin-top: -0.1%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.wave-signup{
+    margin-bottom: -0.5%;
+}
+
+.form-control{
+    border-radius: 0!important;
+    background-clip: border-box!important;
 }
 
 @media screen and (max-width: 768px) {

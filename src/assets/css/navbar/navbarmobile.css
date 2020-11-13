@@ -1,5 +1,5 @@
 .navbar-mobile{
-    background-color: #FF3939;
+    background-color: #2F2E41;
     position: fixed;
     height: 100vh;
     top: 0;
@@ -39,8 +39,8 @@
 }
 
 .btn-sign-mobile{
-    color: #FF3939;
-    border-radius: 6px;
+    color: white;
+    box-shadow: 2px 2px 4px black;
     padding: 3%;
     text-align: center;
     width: 10vh;
@@ -52,8 +52,8 @@
 }
 
 .btn-sign-mobile:hover{
-    color: white;
-    background-color: #FF3939;
+    color: white!important;
+    background-color: #2F2E41;
     transition: 0.2s;
     cursor: pointer;
 }

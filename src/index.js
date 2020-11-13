@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
 
 import Home from './views/Home'
+import Login from './views/Login'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from './index.css'
@@ -19,6 +20,9 @@ ReactDOM.render(
       <Switch>
         <Route path="/home">
           <Home />
+        </Route>
+        <Route path='/login'>
+          <Login />
         </Route>
       </Switch>
     </Router>

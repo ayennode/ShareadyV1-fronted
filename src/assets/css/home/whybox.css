@@ -1,0 +1,50 @@
+.img-wave2{
+    margin-top: -0.5%;
+    position: absolute;
+    transform: rotate(180deg);
+    z-index: 10;
+    width: 100%;
+}
+
+.whybox{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #2F2E41;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-card-why{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #FF3939;
+    font-weight: bolder;
+    background-color: white;
+    padding: 3%;
+    height: 50vh;
+    margin: 0 auto;
+    box-shadow: 3px 3px 6px black;
+    position: relative;
+    z-index: 10;
+}
+
+.box-card-why img{
+    width: 100%;
+    margin-bottom: 10vh;
+}
+
+.box-card-why h1{
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    margin-top: 20%;
+}
+
+@media screen and (max-width: 768px) {
+    .box-card-why{
+        margin-top: 10%;
+    }
+  }

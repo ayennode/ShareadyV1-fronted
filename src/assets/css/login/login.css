@@ -1,0 +1,141 @@
+.img-login{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 90vh;
+    background-color: white;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.login-box{
+    color: white;
+    position: relative;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+.img-login img{
+    width: 100%;
+}
+
+.form-control{
+    border-radius: 0!important;
+    background-clip: border-box!important;
+}
+
+.broke-row{
+    margin: 0!important;
+    width: 100%;
+}
+
+.title-login{
+    font-weight: bolder;
+}
+
+.wrap-btn-login{
+    width: 70%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-login{
+    border: none;
+    padding: 1vh;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 48%;
+    box-shadow: 4px 4px 6px black;
+}
+
+.btn-login:hover{
+    text-decoration: none;
+    border: none;
+}
+
+.signin{
+    background-color: #2F2E41;
+    color: white;
+}
+
+.signin:hover{
+    background-color: white;
+    color: #2F2E41;
+    transition: 0.3s;
+}
+
+.signup:hover{
+    color: #FF3939;
+}
+
+.signup{
+    color: #2F2E41;
+}
+
+.pass-forgot{
+    color: white;
+    margin-top: 5%;
+}
+
+.pass-forgot:hover{
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
+
+.wrap-pass-for{
+    margin-top: 5vh;
+}
+
+.form-login{
+    margin-top: 5%;
+    padding: 3vh!important;
+}
+
+.abcRioButtonContentWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.abcRioButton{
+    width: auto!important;
+}
+
+.g-signin2{
+    margin-top: 8%;
+    box-shadow: 3px 3px 4px black;
+}
+
+.bar-left-log{
+    position: fixed;
+    height: 100vh;
+    width: 2px;
+    background-color: #FF3939;
+    left: 0;
+    top: 0;
+}
+
+.form-login-wrap{
+    margin-bottom: vh;
+    padding-right: 8%!important;
+    padding-left: 8%!important;
+}
+
+.login-in{
+    border-left: 3px solid #FF3939!important;
+}
+
+.prevention-text{
+    margin-top: 10%;
+}
+
+@media screen and (max-width: 768px) {
+    .img-login{
+        display: none;
+    }
+  }

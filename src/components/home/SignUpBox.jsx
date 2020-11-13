@@ -3,7 +3,8 @@ import Fade from 'react-reveal/Fade';
 
 import styles from '../../assets/css/home/signupbox.css'
 
-import iconsignup from '../../assets/img/icon-signup.svg'
+import iconsignup from '../../assets/img/home/icon-signup.svg'
+import wave1 from '../../assets/img/home/wave2.svg'
 
 import Form from '../Form'
 import Button from '../Button'
@@ -15,7 +16,7 @@ const SignUpBox = () => {
         <div className="box_sign_up">
             <div className="container">
                 <div className="row">
-                <Fade top>
+                <Fade bottom>
                     <div className="col-md-6 text-signup">
                         <h1>Shaready</h1>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum iure et eius eos ab facere, aliquam esse, magnam voluptatem ut tenetur dolores eligendi? Neque voluptas deleniti, similique quidem illo quisquam.</p>
@@ -37,7 +38,7 @@ const SignUpBox = () => {
                     
                 </div>
             </div>
-            <div className="background_signup"></div>
+            <div className="background_svg wave-signup"><Image src={wave1} alt_name="wave1" /></div>
         </div>
     )
 }

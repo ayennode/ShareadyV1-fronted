@@ -47,4 +47,9 @@
     .box-card-why{
         margin-top: 10%;
     }
+
+    .whybox{
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+    }
   }

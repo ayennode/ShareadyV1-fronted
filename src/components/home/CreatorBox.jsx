@@ -11,7 +11,7 @@ const CreatorBox = () => {
         <div className="creator-box">
             <div className="container">
                 <div className="row">
-                    <Fade bottom>
+                    <Fade top>
                         <div className="col-md-6 wrapper-image-crea item-crea"><Image src={creator} alt_name="creator" /></div>
                         <div className="col-md-6 item-crea">
                             <h1>Creator's shaready</h1>

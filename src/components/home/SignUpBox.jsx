@@ -1,5 +1,6 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
+import GoogleLogin from 'react-google-login';
 
 import styles from '../../assets/css/home/signupbox.css'
 
@@ -16,7 +17,7 @@ const SignUpBox = () => {
         <div className="box_sign_up">
             <div className="container">
                 <div className="row">
-                <Fade bottom>
+                <Fade top>
                     <div className="col-md-6 text-signup">
                         <h1>Shaready</h1>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum iure et eius eos ab facere, aliquam esse, magnam voluptatem ut tenetur dolores eligendi? Neque voluptas deleniti, similique quidem illo quisquam.</p>
@@ -28,11 +29,18 @@ const SignUpBox = () => {
                             <Image src={iconsignup} alt_name="icon signup"/>
                             <h1>Sign up</h1>
                         </div>
+                        <GoogleLogin
+                            clientId="3573795253-vja71kl2tj9biee1apunne4nrisusaiv.apps.googleusercontent.com"
+                            buttonText="Sign up"
+                            className="btn-google-sign"
+                        />
                         <Form type="text" place="Username" class_name="input-signup form-control"/>
                         <Form type="text" place="E-mail" class_name="input-signup form-control"/>
                         <Form type="text" place="Password" class_name="input-signup form-control"/>
                         <Form type="text" place="Confirm password" class_name="input-signup form-control"/>
                         <Button class_name="btn-sign-up" content="Sign up"/>
+
+                        <p className="text-accept-condition">By registering in, you accept the terms and conditions of use.</p>
                     </form>
                 </Fade>
                     

@@ -12,14 +12,14 @@ const WhatBox = () => {
         <div className="what-box">
             <div className="container">
                 <div className="row">
-                    <Fade bottom>
+                    <Fade top>
                         <div className="col-md-6 item-whatbox">
                             <Image src={logo} />
                             
                         </div>
                     </Fade>
 
-                    <Fade bottom>
+                    <Fade top>
                         <div className="col-md-6 item-whatbox text">
                             <div className="wrapper-what-content">
                                 <h1>What ?</h1>

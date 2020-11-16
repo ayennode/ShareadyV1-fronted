@@ -2,11 +2,10 @@ import React , {useState} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 
-import Image from '../Image'
 import Button from '../Button'
 import NavBarMobile from './NavBarMobile'
 
-import styles from '../../assets/css/navbar/navbar.css'
+import '../../assets/css/navbar/navbar.css'
 
 const Navbar = () => {
     const [classNav, setStateClassNav] = useState("navbar-mobile none")

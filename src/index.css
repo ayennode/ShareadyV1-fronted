@@ -5,6 +5,35 @@ body{
     background-color: #2F2E41;
 }
 
+html{
+    overflow-x: hidden;
+}
+
 .none{
     display: none!important;
+}
+
+.articles{
+    overflow-y: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;               /* width of the entire scrollbar */
+  }
+
+  body::-webkit-scrollbar-track {
+    display: none;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #FF3939;
+    border-radius: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
 }

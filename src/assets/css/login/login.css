@@ -96,20 +96,19 @@
     padding: 3vh!important;
 }
 
-.abcRioButtonContentWrapper{
+.btn-google{
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
+    margin-top: 8%;
+    box-shadow: 3px 3px 4px black!important;
 }
 
 .abcRioButton{
     width: auto!important;
 }
 
-.g-signin2{
-    margin-top: 8%;
-    box-shadow: 3px 3px 4px black;
-}
 
 .bar-left-log{
     position: fixed;

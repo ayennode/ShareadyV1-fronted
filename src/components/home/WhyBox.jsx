@@ -13,9 +13,9 @@ import CardHome from './items/CardHome'
 const WhyBox = () => {
     return(<div>
         <div className="img-wave2"><Image src={wave} alt_name="wave" /></div>
-        <Fade bottom>
             <div>
                 <div className="whybox">
+                <Fade top>
                     <div className="container">
                         <div className="row">
                             <CardHome src={goodcontent} alt_name="good content" content="Best content"/>
@@ -23,9 +23,9 @@ const WhyBox = () => {
                             <CardHome src={follow} alt_name="follow" content="Follow your friends"/>
                         </div>
                     </div>
+                </Fade>
                 </div>
             </div>
-        </Fade>
     </div>
     )
 }

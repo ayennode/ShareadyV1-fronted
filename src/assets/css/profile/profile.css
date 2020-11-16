@@ -1,0 +1,97 @@
+.profile{
+    color: white;
+}
+
+.presentation{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid white;
+    padding-bottom: 2%;
+    margin-bottom: 2%;
+}
+
+.presentation img{
+    height: 150px;
+    width: 150px;
+    border: 1px solid #FF3939;
+    border-radius: 75px;
+}
+
+.content-pres{
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.wrap-edit-title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-edit-pro{
+    display: flex;
+    align-items: center;
+}
+
+.btn-edit-pro span{
+    background-color: #FF3939;
+    width: 10vh;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.btn-edit-pro span:hover{
+    background-color: white;
+    color: #FF3939;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.wrap-stat-user{
+    display: flex;
+    align-items: center;
+}
+
+.wrap-stat-user div{
+    width: 33%;
+    text-align: center;
+}
+
+.nbs-followers div, .nbs-gold-likes div{
+    width: 100%;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.btn-follow{
+    background-color: #FF3939;
+    height: 5vh;
+    width: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+}
+
+.btn-follow:hover{
+    background-color: #FFF;
+    color: #FF3939;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.presentation{
+    margin-top: 3%;
+}
+
+.wrap-edit-title a{
+    color: #FFF;
+}
+
+@media screen and (max-width: 768px) {
+    .presentation{
+        flex-direction: column;
+    }
+}

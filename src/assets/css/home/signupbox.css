@@ -7,6 +7,7 @@
 }
 
 .form-signup{
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -79,6 +80,17 @@
 .form-control{
     border-radius: 0!important;
     background-clip: border-box!important;
+}
+
+.text-accept-condition{
+    font-weight: bolder;
+    margin-top: 3%;
+}
+
+.btn-google-sign{
+    width: 100%;
+    margin-bottom: 3%;
+    box-shadow: 3px 3px 6px black!important;
 }
 
 @media screen and (max-width: 768px) {

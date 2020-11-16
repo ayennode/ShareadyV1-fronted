@@ -4,6 +4,8 @@ import reportWebVitals from './reportWebVitals';
 
 import Home from './views/Home'
 import Login from './views/Login'
+import Articles from './views/Articles'
+import Myprofile from './views/MyProfile'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from './index.css'
@@ -23,6 +25,12 @@ ReactDOM.render(
         </Route>
         <Route path='/login'>
           <Login />
+        </Route>
+        <Route path='/articles'>
+          <Articles />
+        </Route>
+        <Route path='/myprofile'>
+          <Myprofile />
         </Route>
       </Switch>
     </Router>

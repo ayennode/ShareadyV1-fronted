@@ -6,13 +6,13 @@ import WhyBoX from '../components/home/WhyBox'
 import CreatorBox from '../components/home/CreatorBox'
 
 const Home = () => {
-    return(<div>
+    return(<>
             <Navbar />
             <SignUpBox/>
             <WhatBox />
             <WhyBoX />
             <CreatorBox />
-        </div>
+        </>
     )
 }
 

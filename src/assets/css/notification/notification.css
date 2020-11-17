@@ -1,0 +1,43 @@
+.box-notif img{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #FF3939;
+    border-radius: 75px;
+    margin-right: 1rem;
+}
+
+.box-notif{
+    width: 100%;
+    display: flex;
+    color: white;
+    align-items: center;
+    border-bottom: 1px solid white;
+    margin-top: 1rem;
+}
+
+.date-notif{
+    font-size: 15px;
+    font-style: italic;
+}
+
+.wrap-infos-notif{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-see-notif{
+    background-color: #FF3939;
+    height: 5vh;
+    width: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    color: white;
+}
+
+.btn-see-notif:hover{
+    color: #FF3939;
+    background-color: #FFF;
+    transition: 0.2s;
+}

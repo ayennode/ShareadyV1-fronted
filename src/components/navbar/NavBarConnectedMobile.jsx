@@ -13,11 +13,15 @@ const NavbarConnectedMobile = () => {
                     </a>
                 </div>
                 <div className="col-3">
-                    <a href="">
+                    <a href="/myprofile">
                         <FontAwesomeIcon icon={faUser}/>
                     </a>
                 </div>
-                <div className="col-3"><FontAwesomeIcon icon={faBell}/></div>
+                <div className="col-3">
+                    <a href="/notifications">
+                        <FontAwesomeIcon icon={faBell}/>
+                    </a>
+                </div>
             </div>
         </div>
     )

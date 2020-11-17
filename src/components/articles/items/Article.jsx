@@ -6,9 +6,9 @@ import Likes from '../items/Likes'
 
 import imageuser from '../../../assets/img/user-default.svg.png'
 
-const Article = () => {
+const Article = ({other_class}) => {
     return(
-        <div className="box-article">
+        <div className={"box-article " + other_class}>
             <div className="container">
                 <div className="high-article">
                     <Image src={imageuser} alt_name="image user"/>

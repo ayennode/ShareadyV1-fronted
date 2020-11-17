@@ -22,7 +22,7 @@ const NavbarConnected = () => {
                 <div className="nav-item wrap-icons">
                     <a href="/articles"><FontAwesomeIcon icon={faNewspaper} /></a>
                     <a href="/myprofile"><FontAwesomeIcon icon={faUser} /></a>
-                    <Button content={<FontAwesomeIcon icon={faBell} path="" />}/>
+                    <a href="/notifications"><FontAwesomeIcon icon={faBell} /></a>
                 </div>
             </div>
         </nav>

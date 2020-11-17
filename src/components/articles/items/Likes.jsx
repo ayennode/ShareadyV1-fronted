@@ -21,7 +21,7 @@ const Likes = () => {
             </div>
 
             <div className="like-item">
-                <a href=""><FontAwesomeIcon icon={faComment} /></a>
+                <a href="/article/1"><FontAwesomeIcon icon={faComment} /></a>
                 <span className="nbs-item">10</span>
             </div>
         </div>

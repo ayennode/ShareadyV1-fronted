@@ -12,9 +12,9 @@ const MyProfile = () => {
         <div className="profile">
             <div className="container">
                 <UserPresentation />
-                <Article />
-                <Article />
-                <Article />
+                <Article other_class="article-user"/>
+                <Article other_class="article-user"/>
+                <Article other_class="article-user"/>
             </div>
         </div>
     </>)

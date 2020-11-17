@@ -37,3 +37,24 @@ a{
 a:hover{
     text-decoration: none;
 }
+
+.btn-goback{
+    display: flex;
+    align-items: center;
+    min-height: 3vh;
+    color: white;
+    font-size: 3vh;
+    border-bottom: 1px solid white;
+    padding-bottom: 1%;
+}
+
+.icon-back:hover{
+    color: #FF3939;
+    cursor: pointer;
+}
+
+.text-back{
+    margin-left: 5px;
+    font-size: 1em;
+    font-style: italic;
+}

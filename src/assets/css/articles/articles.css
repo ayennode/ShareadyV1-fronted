@@ -365,3 +365,133 @@
 .link-user-ads:hover{
     text-decoration: none;
 }
+
+/* comment */
+
+.infos-comment h1{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.date-comment{
+    font-style: italic;
+    font-size: 15px;
+}
+
+.form-article-only{
+    display: flex;
+}
+
+.form-article-only input{
+    width: 80%;
+    border: none;
+}
+
+.form-article-only button{
+    width: 20%;
+    height: calc(1.5em + .75rem + 2px);
+    border: none;
+    color: white;
+    background-color: #FF3939;
+}
+
+.form-article-only button:hover{
+    box-shadow: 1px 1px 3px white;
+    cursor: pointer;
+}
+
+.box-comment{
+    color: white;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.box-comment img{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid #FF3939;
+    margin-right: 1rem;
+}
+
+.wrap-head-comment{
+    display: flex;
+    align-items: center;
+}
+
+.wrap-btn-pertinent{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
+
+.btn-pertinent{
+    display: flex;
+    width: 20%;
+}
+
+.nbs-pertinent{
+    display: flex;
+    align-items: center;
+}
+
+.btn-like-comment:hover{
+    color: #FF3939;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+
+/* filter comment */
+
+.filter-comment{
+    position: relative;
+    width: 100%;
+    justify-content: flex-end;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    margin-top: 1%;
+}
+
+.wrap-filter-co{
+    display: flex;
+}
+
+.wrap-filter-co:hover{
+    color: #FF3939;
+    cursor: pointer;
+}
+
+.wrap-choose-filter{
+    display: flex;
+    justify-content: flex-end;
+    color: #FFF;
+}
+
+.box-choose-filter{
+    position: absolute;
+    z-index: 2;
+    width: 30vh;
+    background-color: #FF3939;
+}
+
+.btn-choose-f{
+    padding: 2%;
+}
+
+.btn-choose-f h3{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.btn-choose-f p{
+    font-style: italic;
+    font-size: 15px;
+    margin: 0!important;
+}
+
+.btn-choose-f:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}

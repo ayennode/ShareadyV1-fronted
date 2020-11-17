@@ -90,6 +90,10 @@
     color: #FFF;
 }
 
+.article-user{
+    width: 100%!important;
+}
+
 @media screen and (max-width: 768px) {
     .presentation{
         flex-direction: column;

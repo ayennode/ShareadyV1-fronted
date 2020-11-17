@@ -6,6 +6,8 @@ import Home from './views/Home'
 import Login from './views/Login'
 import Articles from './views/Articles'
 import Myprofile from './views/MyProfile'
+import Notification from './views/Notification'
+import ArticleOnly from './views/ArticleOnly'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from './index.css'
@@ -15,6 +17,7 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
+
 
 ReactDOM.render(
   <React.StrictMode>
@@ -31,6 +34,12 @@ ReactDOM.render(
         </Route>
         <Route path='/myprofile'>
           <Myprofile />
+        </Route>
+        <Route path='/notifications'>
+          <Notification />
+        </Route>
+        <Route path='/article/:id_article'>
+          <ArticleOnly />
         </Route>
       </Switch>
     </Router>

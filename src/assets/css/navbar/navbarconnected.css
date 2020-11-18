@@ -148,6 +148,7 @@
 .box-search-user img{
     width: 50px;
     height: 50px;
+    border-radius: 25px;
 }
 
 .text-user-search{
@@ -164,6 +165,8 @@
     margin: 0 auto;
     overflow-y: scroll;
     height: 35vh;
+    position: relative;
+    z-index: 2;
 }
 
 .container-box-user::-webkit-scrollbar {
@@ -177,6 +180,16 @@
 .container-box-user::-webkit-scrollbar-thumb {
     background-color: #FFF;
     border-radius: 20px;
+}
+
+.link-box-user{
+    color: white;
+}
+
+.link-box-user:hover .box-search-user{
+    color: #FF3939;
+    background-color: #FFF;
+    transition: 0.2s;
 }
 
 @media screen and (max-width: 768px) {

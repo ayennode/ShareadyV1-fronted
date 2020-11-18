@@ -497,3 +497,33 @@
 }
 
 /* tag */
+
+.wrap-tag-box{
+    width: 100%;
+    display: flex;
+}
+
+.wrap-tag-box div{
+    margin-right: 5px;
+}
+
+.tag-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF3939;
+    border-radius: 15px;
+    padding: 3px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    max-width: 10ch;
+    min-height: 4vh;
+}
+
+.tag-box svg{
+    cursor: pointer;
+}
+
+.content-tag{
+    margin-right: 8px;
+}

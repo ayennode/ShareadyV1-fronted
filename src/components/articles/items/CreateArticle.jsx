@@ -2,16 +2,38 @@ import React, {useState} from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFeatherAlt, faTimes } from '@fortawesome/free-solid-svg-icons'
+import TagBox from './TagBox'
 
 const CreateArticle = () => {
-    const [classModal, setClassModal] = useState("modal-create-article none")
+    const [classModal, SetClassModal] = useState("modal-create-article none")
+    const [stateValueTag, SetValueTag] = useState("")
+    const [tags, SetTags] = useState([])
 
     const modal_click = (e) => {
-        setClassModal("modal-create-article show_modal")
+        SetClassModal("modal-create-article show_modal")
     }
 
     const hidden_modal = (e) => {
-        setClassModal("modal-create-article none")
+        SetClassModal("modal-create-article none")
+    }
+
+    const tagsValueHandler = (e) => {
+        SetValueTag(e.target.value)
+    }
+
+    const tagsHandler = (e) => {
+        if (e.code === "Space") {
+            if (tags.length >= 3) {
+                SetValueTag("")
+            } else{
+                SetTags([...tags, e.target.value])
+                SetValueTag("")
+            }
+        }
+    }
+
+    const deleteTag = (i) => {
+        SetTags([...tags.filter((_, index) => index !== i)])
     }
 
     return(<>
@@ -26,7 +48,10 @@ const CreateArticle = () => {
                 <form className="create-article-form">
                     <input type="text" className="form-control item-form-create" placeholder="Title"/>
                     <textarea cols="30" rows="10" className="form-control item-form-create" placeholder="Content"></textarea>
-                    <input type="text" className="form-control item-form-create" placeholder="Tags,.."/>
+                    <input type="text" className="form-control item-form-create" placeholder="Tags,.." value={stateValueTag} onChange={tagsValueHandler} onKeyDown={tagsHandler}/>
+                    <span className="wrap-tag-box">
+                        {tags.map((tag, i) => <TagBox key={i} content={tag} deleteAction={() => deleteTag(i)}/>)}
+                    </span>
                     <button>Send</button>
                 </form>
             </div>

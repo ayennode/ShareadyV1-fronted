@@ -208,9 +208,9 @@
 @media screen and (max-width: 768px) {
     .btn-create-article{
         bottom: 12vh;
-        height: 6vh;
-        border-radius: 3vh;
-        width: 6vh;
+        height: 8vh;
+        border-radius: 4vh;
+        width: 8vh;
     }
 
     .card-create{
@@ -495,3 +495,5 @@
     background-color: rgba(0, 0, 0, 0.5);
     cursor: pointer;
 }
+
+/* tag */

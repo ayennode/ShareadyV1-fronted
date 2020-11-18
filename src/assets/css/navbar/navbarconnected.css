@@ -56,19 +56,66 @@
     border-left: 2px solid #FF3939!important;
 }
 
-.col-3 a{
+.col-4 a{
     color: white;
     text-decoration: none;
 }
 
-.col-3 a:hover{
+.col-4 a:hover{
     text-decoration: none;
     color: #FFF;
     cursor: pointer;
 }
 
+.search-mobile{
+    position: absolute;
+    right: 3%;
+    top: 0;
+    color: white;
+    font-size: 30px;
+    height: 10vh;
+    align-items: center;
+    display: none;
+}
+
+.form-search-mobile{
+    width: 100%;
+    background-color: #2F2E41;
+}
+
+.form-search-mobile input{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    animation: show-input 0.5s forwards;
+}
+
+@keyframes show-input{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 80%;
+    }
+}
+
+.search-mobile svg:hover{
+    color: #FFF;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.big-width{
+    width: 100%;
+}
+
 @media screen and (max-width: 768px) {
     .navbar-co-mobile{
         display: block;
+    }
+
+    .search-mobile{
+        display: flex;
     }
   }

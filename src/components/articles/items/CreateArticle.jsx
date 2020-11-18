@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlus, faTimes } from '@fortawesome/free-solid-svg-icons'
+import { faFeatherAlt, faTimes } from '@fortawesome/free-solid-svg-icons'
 
 const CreateArticle = () => {
     const [classModal, setClassModal] = useState("modal-create-article none")
@@ -16,7 +16,7 @@ const CreateArticle = () => {
 
     return(<>
         <div onClick={modal_click} className="btn-create-article">
-            <FontAwesomeIcon icon={faPlus} />
+            <FontAwesomeIcon icon={faFeatherAlt} size="2x"/>
         </div>
 
         <div className={classModal}>

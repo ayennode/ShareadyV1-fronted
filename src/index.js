@@ -8,6 +8,7 @@ import Articles from './views/Articles'
 import Myprofile from './views/MyProfile'
 import Notification from './views/Notification'
 import ArticleOnly from './views/ArticleOnly'
+import Tags from './views/Tags'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from './index.css'
@@ -40,6 +41,9 @@ ReactDOM.render(
         </Route>
         <Route path='/article/:id_article'>
           <ArticleOnly />
+        </Route>
+        <Route path='/tag/:name_tag'>
+          <Tags />
         </Route>
       </Switch>
     </Router>

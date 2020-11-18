@@ -7,9 +7,9 @@ const NavbarConnectedMobile = () => {
 
     const searchHandler = () => {
         if (searchMobileClass[0] === "search-mobile big-width") {
-            SetSearchMobileClass({...searchMobileClass, 0: "search-mobile", 1: "form-search-mobile none"})
+            SetSearchMobileClass({0: "search-mobile", 1: "form-search-mobile none"})
         }else{
-            SetSearchMobileClass({...searchMobileClass, 0: "search-mobile big-width", 1: "form-search-mobile"})
+            SetSearchMobileClass({0: "search-mobile big-width", 1: "form-search-mobile"})
         }
     }
 

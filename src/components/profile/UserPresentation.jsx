@@ -12,7 +12,7 @@ const UserPresentation = () => {
                 <div className="wrap-edit-title">
                     <h1>User</h1>
                     <div className="btn-edit-pro">
-                    <a href=""><span>Edit</span></a>
+                    <a href="/myprofile/edit/"><span>Edit</span></a>
                     </div>
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam accusantium provident illum architecto quia adipisci fuga veritatis rerum vero?</p>

@@ -9,6 +9,7 @@ import Myprofile from './views/MyProfile'
 import Notification from './views/Notification'
 import ArticleOnly from './views/ArticleOnly'
 import Tags from './views/Tags'
+import EditProfile from './views/EditProfile'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from './index.css'
@@ -33,7 +34,7 @@ ReactDOM.render(
         <Route path='/articles'>
           <Articles />
         </Route>
-        <Route path='/myprofile'>
+        <Route exact path='/myprofile'>
           <Myprofile />
         </Route>
         <Route path='/notifications'>
@@ -44,6 +45,9 @@ ReactDOM.render(
         </Route>
         <Route path='/tag/:name_tag'>
           <Tags />
+        </Route>
+        <Route exact path='/myprofile/edit/'>
+          <EditProfile />
         </Route>
       </Switch>
     </Router>

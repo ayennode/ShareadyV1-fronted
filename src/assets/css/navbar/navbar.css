@@ -1,78 +1,141 @@
-.navbar{
-    background-color: #2F2E41;
-    height: 10vh;
+.navbar {
+  background-color: #2f2e41;
+  height: 10vh;
 }
 
-.btn-sign{
-    font-weight: bolder;
-    color: white;
-    margin-right: 20px;
+.btn-sign {
+  font-weight: bolder;
+  color: white;
+  margin-right: 20px;
 }
 
-.sign-up{
-    border-radius: 4px;
-    background-color: white;
-    color: #FF3939!important;
-    padding: 10px;
-    box-shadow: 2px 4px 8px black;
+.sign-up {
+  border-radius: 4px;
+  background-color: white;
+  color: #ff3939 !important;
+  padding: 10px;
+  box-shadow: 2px 4px 8px black;
 }
 
-.btn-middle{
-    margin-right: 10px;
-    color: white;
+.btn-middle {
+  margin-right: 10px;
+  color: white;
 }
 
-.btn-bars{
-    display: none;
-    color: white;
-    font-size: 25px;
-    cursor: pointer;
+.btn-bars {
+  display: none;
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
 }
 
-.btn-bars:hover{
-    color: white;
+.btn-bars:hover {
+  color: white;
 }
 
-.nav-item a:hover{
-    border: none;
-    color: white;
+.nav-item a:hover {
+  border: none;
+  color: white;
 }
 
-.btn-sign:hover{
-    background-color: #2F2E41;
-    color: white!important;
-    transition: 0.2s;
-    text-decoration: none;
-    border:none;
+.btn-sign:hover {
+  background-color: #2f2e41;
+  color: white !important;
+  transition: 0.2s;
+  text-decoration: none;
+  border: none;
 }
 
-.text-signup{
-    color: white;
-    position: relative;
-    z-index: 2;
+.text-signup {
+  color: white;
+  position: relative;
+  z-index: 2;
 }
 
-.navbar-brand h1{
+.navbar-brand h1 {
+  font-weight: bolder;
+  color: white;
+  font-size: 30px;
+}
+
+.navbar-brand a:hover {
+  text-decoration: none;
+  border: none;
+}
+
+.navbar-mobile {
+  flex-direction: column;
+  animation: slide_to_left 1s forwards;
+
+  background-color: #2f2e41;
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  width: 50%;
+  border-left: 1px solid white;
+  right: 0;
+  z-index: 10;
+  display: flex;
+}
+.navbar-mobile a {
+  display: block;
+  margin: 10px;
+  text-align: center;
+}
+
+.navbar-mobile a:first-child {
+  margin-top: 35px;
+}
+
+/*
+exemple d'ecriture en less, ça ne marche pas ici, mais ça simplifie énormement la css à terme
+.navbar-brand {
+  h1 {
     font-weight: bolder;
     color: white;
     font-size: 30px;
-}
+  }
 
-.navbar-brand a:hover{
+  a:hover {
     text-decoration: none;
     border: none;
+  }
+}
+*/
+@media screen and (max-width: 768px) {
+  .navbar > .container > .nav-item {
+    display: none;
+  }
+
+  .btn-bars {
+    display: block;
+  }
+
+  .text-signup {
+    display: none;
+  }
 }
 
-@media screen and (max-width: 768px) {
-    .nav-item{
-        display: none;
-    }
+.slide_to_right {
+  animation: slide_to_right 1s forwards;
+}
 
-    .btn-bars{
-        display: block;
-    }
-
-    .text-signup{
-        display: none;
-    }
+@keyframes slide_to_right {
+  0% {
+    transform: translateX(0);
   }
+
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+@keyframes slide_to_left {
+  0% {
+    transform: translateX(100vw);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
